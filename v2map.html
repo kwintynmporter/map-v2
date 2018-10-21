@@ -1,0 +1,37 @@
+
+<!doctype html> 
+<!--Author: Kwintyn Porter
+    Class: Web and Distributed Programming
+    Project: Map Mania v2
+    Session: su18-cpsc-24700-lt1
+    Description: Second version of Map Mania Proj. [PA4] -->
+<html lang="en"> 
+    <head> 
+        <title> Map Mania Lite V1 </title>
+        <meta name="viewport" content="initial-scale=1.0"
+        <meta charset="UTF-8"> 
+        <script src="v2map.js"></script> 
+        <link rel="stylesheet" href="v2map.css"> 
+    </head>
+    <body onload="load_greeting();">
+    <h1> Stay local or travel far? </h1>
+    <h4> (zoom out, take a look around the world...)</h4>
+    Hint: <input id="hint-identifier" type="text" value="Horrible family vacation place." size="30" disabled><br><br>
+    Score: <input id="score-identifier" type="text" value="1" size="2" disabled><br><br>
+    Click here to lose instantly: <input id="cheat-code" type="text" value="Could this be the answer? Where shall I click?" size="40" disabled><br><br> 
+    <p ondblclick="myCheatCode()"> Did you try clicking here? </p>
+    <p id="thecheat"> </p>
+
+    <script> 
+    function myCheatCode(){
+            document.getElementById("thecheat").innerHTML = "YOU WIN! Congrats!";
+    }
+    </script>
+    <div id="myMapID"></div>
+    <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBEJXZ5ONf8RrlDwhEh1NicDhRL0ApemZI&callback=initMap"
+        async defer>
+    </script>
+  </body> 
+</html>
+
+
