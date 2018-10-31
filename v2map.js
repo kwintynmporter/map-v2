@@ -5,7 +5,7 @@
 //  Description: Second version of Map Mania Proj. [PA4]
 function load_greeting () {
     alert("There's a simple way to win this game. \n" +
-          "What happens here, stays here. \n" + "Try not to lose everything.");
+          "Look around the country to find the right place. \n" + "You'll win the game if you find it.");
   }
 var gMap; 
 
